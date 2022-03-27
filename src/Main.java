@@ -9,12 +9,10 @@ public class Main {
         try
         {
             int n = Integer.parseInt(reader.readLine());//опредилитель матрицы
-            int k = Integer.parseInt(reader.readLine());//номер для обработки матрицы по заданию
 
-            if(n<2 || 0>=k ||  k>n)
+            if(n<2)
             {
-                System.err.println("Первое число должно быть не меньше 2.");
-                System.err.println("Второе число должно быть положительным, но не больше первого!");
+                System.err.println("Enter number > 2");
             }
             else
                 Answer.calk(MatrixCreate.create(n), n);
